@@ -1,11 +1,12 @@
 # Child Component
 
 we can Render a single child component like
-    class App extends Component {
-      render() {
-        return <Home />;
-      }
+<code>class App extends Component {
+        render() {
+            return <Home />;
+        }
     }
+</code>
 
 
 when we try to render multiple children in the same way as below
