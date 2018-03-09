@@ -1,6 +1,6 @@
 # Child Component
 
-##we can Render a single child component like
+## we can Render a single child component like
 ```
 class App extends Component {
     render() {
@@ -10,7 +10,7 @@ class App extends Component {
 ```
 
 
-##when we try to render multiple children in the same way as below
+## when we try to render multiple children in the same way as below
 ```
     class App extends Component {
       render() {
@@ -22,9 +22,9 @@ class App extends Component {
 The above code thows an error stating 
 >"Adjacent JSX elements must be wrapped in an enclosing tag"
 
-###Below are the solutions for above error
+### Below are the solutions for above error
 
-####1. Sol1: This needs enclosing parent tag
+#### 1. Sol1: This needs enclosing parent tag
 ```
         class App extends Component {
           render() {
@@ -33,8 +33,8 @@ The above code thows an error stating
         }
 ```
 
-####2. Sol2: Return as array
-Note: When iterating and redering a collection we need a key identifier for each item
+#### 2. Sol2: Return as array
+    Note: When iterating and redering a collection we need a key identifier for each item
 ```
         class App extends Component {
           render() {
@@ -43,8 +43,8 @@ Note: When iterating and redering a collection we need a key identifier for each
         }
 ```
 
-####3. Sol3: Using Fragment
-First we need to import Fragment as shown below
+#### 3. Sol3: Using Fragment
+    First we need to import Fragment as shown below
 ```
         import React, { Component, Fragment } from 'react';
 ```
