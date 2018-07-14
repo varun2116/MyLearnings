@@ -1,5 +1,4 @@
 # Node
-
 ###Contents
 * [Create a Module] (02_ownModule/README.md)
 * [Read/Write Files] (04_readWriteFiles/README.md)
