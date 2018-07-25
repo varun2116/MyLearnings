@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+
+    <title>Reverse In Place</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Word Reverse</h1>
+        <p>Given sentence :
+          <b id="result" class="lead"></b>
+        </p>
+        <p>Result sentence :
+          <b id="result2" class="lead"></b>
+        </p>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="userInput">Enter a sentence</label>
+            <input type="text" class="form-control" id="userInput" placeholder="Enter sentence...">
+          </div>
+          <button id="checkPrimeBtn" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="src.js"></script>
+    <script>
+      $("#checkPrimeBtn").click(function(e){
+        e.preventDefault();
+        var str1 = $("#userInput").val();
+        $("#result").text(str1);
+        $("#result2").text(wordReverse(str1));
+      });
+    </script>
+  </body>
+</html>
