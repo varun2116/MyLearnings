@@ -8,24 +8,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
 
-    <title>Reverse In Place</title>
+    <title>Permutations of a String</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1 class="display-4">Word Reverse</h1>
-        <p>Given sentence :
+        <h1 class="display-4">Permutations of a String</h1>
+        <p>Given String:
           <b id="result" class="lead"></b>
         </p>
-        <p>Result sentence :
+        <p>Result :
           <b id="result2" class="lead"></b>
         </p>
       </div>
       <div class="row justify-content-md-center">
         <div class="col-md-6">
           <div class="form-group">
-            <label for="userInput">Enter a sentence</label>
-            <input type="text" class="form-control" id="userInput" placeholder="Enter sentence...">
+            <label for="userInput">Enter String</label>
+            <input type="text" class="form-control" id="userInput" placeholder="Enter String...">
           </div>
           <button id="checkPrimeBtn" class="btn btn-primary">Submit</button>
         </div>
@@ -40,9 +40,11 @@
     <script>
       $("#checkPrimeBtn").click(function(e){
         e.preventDefault();
+        $("#result").empty();
+        $("#result2").empty();
         var str1 = $("#userInput").val();
         $("#result").text(str1);
-        $("#result2").text(wordReverse(str1));
+        $("#result2").text(permuteString(str1).toString());
       });
     </script>
   </body>
