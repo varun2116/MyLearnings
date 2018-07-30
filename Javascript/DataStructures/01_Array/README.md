@@ -117,9 +117,9 @@ The output from this program is:
 ```
 
 > **Note:** str.split([separator[, limit]])
-separator > Optional
+*separator*(Optional)
 Specifies the string which denotes the points at which each split should occur. The separator is treated as a string or as a regular expression.
-limit > Optional
+*limit*(Optional)
 Integer specifying a limit on the number of splits to be found
 
 ### AGGREGATE ARRAY OPERATIONS
