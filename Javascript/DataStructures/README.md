@@ -5,6 +5,7 @@ A data structure is a particular way of organizing and storing data in a compute
 * [Array](01_Array)
 * [List](02_List)
 * [Stacks](03_Stacks)
+* [Queues](04_Queues)
 
 
 https://www.safaribooksonline.com/library/view/data-structures-and/9781449373931/ch04.html
