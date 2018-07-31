@@ -19,3 +19,4 @@ To keep track of where the top element is, as well as keeping track of where to 
 While pushing, popping, and peeking are the primary operations associated with a stack, there are other operations we need to perform and properties we need to examine. The *clear* operation removes all the elements from a stack. The *length* property holds the number of elements contained in a stack. We also define an empty property to let us know if a stack has no elements in it, though we can use the length property for this as well.
 
 * [Stack Implementation](01_Stack_Implementation)
+* [Using Stack Class](02_Using_Stack_Class)
