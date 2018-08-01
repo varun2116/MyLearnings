@@ -8,8 +8,9 @@ function Node(element) {
     this.next = null;
 }
 
-function LinkedList() {
+function CLinkedList() {
     this.head = new Node("head");
+    this.head.next = this.head;
     this.find = find;
     this.insert = insert;
     this.remove = remove;
@@ -34,7 +35,7 @@ function insert(newElement, item) {
 
 function display() {
     var currNode = this.head;
-    while (currNode.next != null) {
+    while (currNode.next != null && currNode.next.element != "head") {
         print(currNode.next.element);
         currNode = currNode.next;
     }
@@ -55,15 +56,7 @@ function remove(item) {
     }
 }
 
-var cities = new LinkedList();
-cities.insert("Conway", "head");
-cities.insert("Russellville", "Conway");
-cities.insert("Alma", "Russellville");
-cities.display();
-
-print("------");
-
-var cities = new LinkedList();
+var cities = new CLinkedList();
 cities.insert("Conway", "head");
 cities.insert("Russellville", "Conway");
 cities.insert("Carlisle", "Russellville");

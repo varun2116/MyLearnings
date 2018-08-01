@@ -89,3 +89,61 @@ The output is:
 ```
 
 ### REMOVING NODES FROM A LINKED LIST
+
+In order to remove a node from a linked list, we need to find the node that is just before the node we want to remove. Once we find that node, we change its next property to no longer reference the removed node, and the previous node is modified to point to the node after the removed node. We can define a function, *findPrevious()*, to perform this task. This function traverses the linked list, stopping at each node to see if the next node stores the data that is to be removed. When the data is found, the function returns this node (the “previous” node), so that its next property can be modified. Here is the definition for **findPrevious()**:
+```
+    function findPrevious(item) {
+        var currNode = this.head;
+        while (currNode.next != null && currNode.next.element != item) {
+            currNode = currNode.next;
+        }
+        return currNode;
+    }
+```
+Now we’re ready to write the **remove()** function:
+```
+    function remove(item) {
+        var prevNode = findPrevious(item);
+        if(prevNode.next != null){
+            prevNode.next = prevNode.next.next;
+        }
+    }
+```
+The main line of code in this function looks odd, but makes perfect sense:
+```
+    prevNode.next = prevNode.next.next;
+```
+We are just skipping over the node we want to remove and linking the “previous” node with the node just after the one we are removing.
+
+We are ready to test our code again, but first we need to modify the constructor function for the LinkedList class to include these new functions:
+```
+    function LinkedList() {
+        this.head = new Node("head");
+        this.find = find;
+        this.insert = insert;
+        this.remove = remove;
+        this.display = display;
+        this.findPrevious = findPrevious;
+    }
+```
+A short program that tests the remove() function:
+```
+    var cities = new LinkedList();
+    cities.insert("Conway", "head");
+    cities.insert("Russellville", "Conway");
+    cities.insert("Carlisle", "Russellville");
+    cities.insert("Alma", "Carlisle");
+    cities.display();
+    cities.remove("Carlisle");
+    cities.display();
+```
+The output is:
+```
+    Conway
+    Russellville
+    Carlisle
+    Alma
+    Conway
+    Russellville
+    Alma
+```
