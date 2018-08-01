@@ -2,7 +2,7 @@
 
 Although traversing a linked list from the first node to the last node is straightforward, it is not as easy to traverse a linked list backward. We can simplify this procedure if we add a property to our Node class that stores a link to the previous node. When we insert a node into the list, we’ll have to perform more operations to assign the proper links for the next and previous nodes, but we gain efficiency when we have to remove a node from the list, since we no longer have to search for the previous node.
 
-![A doubly linked list](img/DLinkedList.png)
+![A doubly linked list](../img/DLinkedList.png)
 
 Our first task is to assign a *previous property* to our Node class:
 ```
@@ -26,7 +26,7 @@ The **insert()** function for a doubly linked list is similar to the insert() fu
 
 The **remove()** function for a doubly linked list is more efficient than for a singly linked list because we don’t have to find the previous node. We first need to find the node in the list that is storing the data we want to remove. Then we set that node’s previous property to the node pointed to by the deleted node’s next property. Then we need to redirect the previous property of the node the deleted node points to and point it to the node before the deleted node.
 
-![Removing a node from a doubly linked list](img/DLinkedListRemove.png)
+![Removing a node from a doubly linked list](../img/DLinkedListRemove.png)
 
 Here is the code for the **remove()** function:
 ```

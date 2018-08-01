@@ -7,7 +7,7 @@ A circularly linked list is similar to a singly linked list and has the same typ
 
 is propagated throughout the circularly linked list so that every new node has its *next* property pointing to the head of the list. In other words, the last node of the list is always pointing back to the head of the list, creating a circular list,
 
-![A circularly linked list](img/CLinkedList.png)
+![A circularly linked list](../img/CLinkedList.png)
 
 The reason you might want to create a circularly linked list is if you want the ability to go backward through a list but don’t want the extra overhead of creating a doubly linked list. You can move backward through a circularly linked list by moving forward through the end of the list to the node you are trying to reach.
 
