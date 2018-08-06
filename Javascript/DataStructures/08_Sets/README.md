@@ -19,7 +19,10 @@ Here are some definitions you need to know to work with sets:
 The fundamental operations performed on sets are:
 
 > **Union**: A new set is obtained by combining the members of one set with the members of another set.
+
 > **Intersection**: A new set is obtained by adding all the members of one set that also exist in a second set.
+
 > **Difference**:A new set is obtained by adding all the members of one set except those that also exist in a second set.
 
 * [The Set Class Implementation](01_Set_Class)
+* [More Set Operations](02_Set_Operations)
