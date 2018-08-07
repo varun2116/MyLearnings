@@ -25,3 +25,5 @@ This concept of the root node being at the top of a tree, while in real life a t
 Finally, each node in a tree has a value associated with it. This value is sometimes referred to as the *key* value.
 
 * [Binary Trees and Binary Search Trees](01_Binary_Tree)
+* [BST Searches](02_BST_Searches)
+* [Removing Nodes from a BST](03_Removing_Node)
