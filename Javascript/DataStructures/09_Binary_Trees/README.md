@@ -27,3 +27,4 @@ Finally, each node in a tree has a value associated with it. This value is somet
 * [Binary Trees and Binary Search Trees](01_Binary_Tree)
 * [BST Searches](02_BST_Searches)
 * [Removing Nodes from a BST](03_Removing_Node)
+* [Counting Occurrences](04_Counting_Occurrences)
