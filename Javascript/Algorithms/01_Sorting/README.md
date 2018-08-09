@@ -90,3 +90,9 @@ The fundamental concept of the basic sorting algorithms covered next is that the
 ## Advanced Sorting Algorithms
 
 These sorting algorithms are generally considered the most efficient for large data sets, where data sets can have millions of elements rather than just hundreds or even thousands. The algorithms we study in this chapter include Quicksort, Shellsort, Mergesort, and Heapsort. We discuss each algorithm’s implementation and then compare their efficiency by running timing tests.
+
+* [THE SHELLSORT ALGORITHM](04_SHELLSORT)
+* [THE MERGESORT ALGORITHM](05_MERGESORT)
+* [THE QUICKSORT ALGORITHM](06_QUICKSORT)
+
+[TIMING COMPARISONS OF THE Advanced SORTING ALGORITHMS](TIMING_COMPARE_Advanced_SORTING)
