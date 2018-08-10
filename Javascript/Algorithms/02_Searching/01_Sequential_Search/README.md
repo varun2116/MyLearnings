@@ -108,9 +108,9 @@ Here is one run of the program:
 
 Keep in mind that the seqSearch() function is not as fast as the built-in Array.indexOf() function, but is shown here to demonstrate how search works.
 
-### SEARCHING FOR MINIMUM AND MAXIMUM VALUES
+* [Searching for Minimum and Maximum Values](01_MINIMUM_AND_MAXIMUM)
 
-### USING SELF-ORGANIZING DATA
+* [Using Self-Organizing Data](02_Using_self-organizing_Data)
 
 ## Complexity
 Time Complexity: `O(n)` - since in worst case we're checking each element exactly once.

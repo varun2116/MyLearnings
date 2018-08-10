@@ -10,3 +10,5 @@ An algorithm is an unambiguous specification of how to solve a class of problems
     * [THE MERGESORT ALGORITHM](01_Sorting/05_MERGESORT)
     * [THE QUICKSORT ALGORITHM](01_Sorting/06_QUICKSORT)
 * [Searching](02_Searching)
+    * [Sequential Search](02_Searching/01_Sequential_Search)
+    * [Binary Search](02_Searching/02_Binary_Search)
