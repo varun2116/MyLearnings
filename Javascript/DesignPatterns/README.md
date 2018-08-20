@@ -1,5 +1,9 @@
 # Design Patterns
 
+In software engineering, a **design pattern** is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
+
+> **"One of the most important aspects of writing maintainable code is being able to notice the recurring themes in that code and optimize them. This is an area where knowledge of design patterns can prove invaluable."** - Addy Osmani
+
 ## What Is a Pattern?
 
 A **pattern** is a reusable solution that can be applied to commonly occurring problems in software design—in our case, in writing JavaScript web applications. Another way of looking at patterns is as templates for how we solve problems—ones that can be used in quite a few different situations.
@@ -34,39 +38,59 @@ With this in mind, lets now take a look at a summary of the component elements f
 * Description
 
 * Context outline
-
-      The contexts in which the pattern is effective in responding to users’ needs.
+```
+The contexts in which the pattern is effective in responding to users’ needs.
+```
 
 * Problem statement
-      A statement of the problem being addressed so we can understand the intent of the pattern.
+```
+A statement of the problem being addressed so we can understand the intent of the pattern.
+```
 
 * Solution
-      A description of how the user’s problem is being solved in an understandable list of steps and perceptions.
+```
+A description of how the user’s problem is being solved in an understandable list of steps and perceptions.
+```
 
 * Design
-      A description of the pattern’s design and, in particular, the user’s behavior in interacting with it.
+```
+A description of the pattern’s design and, in particular, the user’s behavior in interacting with it.
+```
 
 * Implementation
-      A guide to how the pattern would be implemented.
+```
+A guide to how the pattern would be implemented.
+```
 
-* Illustrations
-      Visual representations of classes in the pattern (e.g., a diagram).
+* Illustrations      
+```
+Visual representations of classes in the pattern (e.g., a diagram).
+```
 
 * Examples
-      Implementations of the pattern in a minimal form.
+```
+Implementations of the pattern in a minimal form.
+```
 
 * Corequisites
-      What other patterns may be needed to support use of the pattern being described?
+```
+What other patterns may be needed to support use of the pattern being described?
+```
 
 * Relations
-      What patterns does this pattern resemble? Does it closely mimic any others?
+```
+What patterns does this pattern resemble? Does it closely mimic any others?
+```
 
 * Known usage
-      Is the pattern being used in the wild? If so, where and how?
+```
+Is the pattern being used in the wild? If so, where and how?
+```
 
 * Discussions
-      The team or author’s thoughts on the exciting benefits of the pattern.
-
+```
+The team or author’s thoughts on the exciting benefits of the pattern.
+```
 
 ## Anti-Patterns
 
@@ -105,13 +129,13 @@ The 23 GoF patterns are generally considered the foundation for all other patter
 
 | Name                          | Description  |
 |--------------------           | :----------- |
-| ***[Creational Patterns]()*** |              |
+| ***[Creational Patterns](01_Creational_Patterns)*** |              |
 | [Abstract Factory]()          |	Creates an instance of several families of classes |
 | [Builder]()	                  | Separates object construction from its representation |
 | [Factory Method]()	          | Creates an instance of several derived classes |
 | [Prototype]()	                | A fully initialized instance to be copied or cloned |
 | [Singleton]()	                | A class of which only a single instance can exist |
-| ***[Structural Patterns]()*** |               |
+| ***[Structural Patterns](02_Structural_Patterns)*** |               |
 | [Adapter]()                   |	Match interfaces of different classes |
 | [Bridge]()	                  | Separates an object’s interface from its implementation |
 | [Composite]()	                | A tree structure of simple and composite objects |
@@ -119,7 +143,7 @@ The 23 GoF patterns are generally considered the foundation for all other patter
 | [Facade]()	                  | A single class that represents an entire subsystem |
 | [Flyweight]()	                | A fine-grained instance used for efficient sharing |
 | [Proxy]()	                    | An object representing another object |
-| ***[Behavioral Patterns]()*** |                 |
+| ***[Behavioral Patterns](03_Behavioral_Patterns)*** |                 |
 | [Chain of Resp.]()	          | A way of passing a request between a chain of objects |
 | [Command]()	                  | Encapsulate a command request as an object |
 | [Interpreter]()	              | A way to include language elements in a program |
@@ -132,4 +156,11 @@ The 23 GoF patterns are generally considered the foundation for all other patter
 | [Template]()                  | Method	Defer the exact steps of an algorithm to a subclass |
 | [Visitor]()	                  | Defines a new operation to a class without change |
 
-> **"One of the most important aspects of writing maintainable code is being able to notice the recurring themes in that code and optimize them. This is an area where knowledge of design patterns can prove invaluable."** - Addy Osmani
+
+## Uses of Design Patterns
+
+Design patterns can speed up the development process by providing tested, proven development paradigms. Effective software design requires considering issues that may not become visible until later in the implementation. Reusing design patterns helps to prevent subtle issues that can cause major problems and improves code readability for coders and architects familiar with the patterns.
+
+Often, people only understand how to apply certain software design techniques to certain problems. These techniques are difficult to apply to a broader range of problems. Design patterns provide general solutions, documented in a format that doesn't require specifics tied to a particular problem.
+
+In addition, patterns allow developers to communicate using well-known, well understood names for software interactions. Common design patterns can be improved over time, making them more robust than ad-hoc designs.
