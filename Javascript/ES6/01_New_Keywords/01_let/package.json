@@ -1,0 +1,18 @@
+{
+  "name": "01_let",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src.js",
+  "scripts": {
+    "babel": "babel --presets es2015 src.js -o build/main.bundle.js",
+    "start": "npm run webpack",
+    "webpack": "webpack -d --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^7.1.5",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}
