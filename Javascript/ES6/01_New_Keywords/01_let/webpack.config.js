@@ -1,25 +1,23 @@
-var path = require('path');
- var webpack = require('webpack');
+const path = require("path");
 
- module.exports = {
-     entry: './src.js',
-     output: {
-         path: path.resolve(__dirname, 'build'),
-         filename: 'main.bundle.js'
-     },
-     module: {
-         loaders: [
-             {
-                 test: /\.js$/,
-                 loader: 'babel-loader',
-                 query: {
-                     presets: ['es2015']
-                 }
-             }
-         ]
-     },
-     stats: {
-         colors: true
-     },
-     devtool: 'source-map'
- };
+    module.exports = {
+        entry: "./src.js",
+        output: {
+            filename: "bundle.js",
+            path: path.join(__dirname, "dist")
+        },
+        module: {
+            rules: [
+                {
+                    test: /.js$/,
+                    exclude: /(node_modules)/,
+                    use: {
+                        loader: "babel-loader",
+                        options: {
+                            presets: ["env"]
+                        }
+                    }
+                }
+            ]
+        }
+    }
