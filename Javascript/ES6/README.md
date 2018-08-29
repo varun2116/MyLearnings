@@ -19,6 +19,7 @@ JavaScript was lacking behind some other programming languages when compared to 
     1. [The iteration protocols](07_Iterators/01_iteration_protocols)
     2. [The `for…of` loop](07_Iterators/02_for_of_loop)
 8. [Generators](08_Generators)
+9. [Classes](09_Classes)
 
 ## Prerequisites
 
