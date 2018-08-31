@@ -12,3 +12,7 @@ An algorithm is an unambiguous specification of how to solve a class of problems
 * [Searching](02_Searching)
     * [Sequential Search](02_Searching/01_Sequential_Search)
     * [Binary Search](02_Searching/02_Binary_Search)
+
+## Miscellaneous
+
+* [Generate all balanced bracket combinations](Misc/01_Bracket_combinations)
