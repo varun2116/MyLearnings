@@ -1,11 +1,10 @@
-# Hello World
+## Hello World
 
-# Install the CLI tool
-npm install -g create-react-app
-
-# Create an app
-create-react-app my-app-name
-
-# Install Dependencies
-cd my-app-name
-npm install
+The smallest React example looks like this:
+```
+    ReactDOM.render(
+      <h1>Hello, world!</h1>,
+      document.getElementById('root')
+    );
+```
+It displays a heading saying “Hello, world!” on the page.
