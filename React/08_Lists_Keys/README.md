@@ -23,7 +23,7 @@ Below, we loop through the numbers array using the JavaScript map() function. We
       <li>{number}</li>
     );
 ```
-We include the entire `listItems` array inside a <ul> element, and render it to the DOM:
+We include the entire `listItems` array inside a `<ul>` element, and render it to the DOM:
 ```
     ReactDOM.render(
       <ul>{listItems}</ul>,
