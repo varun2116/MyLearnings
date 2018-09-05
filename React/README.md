@@ -12,6 +12,9 @@
     * [Forms](09_Forms)
     * [Lifting State Up](10_Lifting_State_Up)
 
+* Projects
+    * [Todo App](Projects/01_Todo_App)
+
 
 # Prerequisites
 
