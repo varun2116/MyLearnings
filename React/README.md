@@ -10,6 +10,10 @@
     * [Conditional Rendering](07_Conditional_Render)
     * [Lists and Keys](08_Lists_Keys)
     * [Forms](09_Forms)
+    * [Lifting State Up](10_Lifting_State_Up)
+
+* Projects
+    * [Todo App](Projects/01_Todo_App)
 
 
 # Prerequisites

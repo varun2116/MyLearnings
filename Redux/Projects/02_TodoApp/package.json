@@ -1,0 +1,27 @@
+{
+  "name": "todoappwithredux",
+  "version": "1.0.0",
+  "description": "Todo App with React and Redux",
+  "scripts": {
+    "start:dev": "webpack-dev-server",
+    "build": "webpack",
+    "watch": "webpack --w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.11.2"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  }
+}
