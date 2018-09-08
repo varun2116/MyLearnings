@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+
+    <title>Sum of Two in Array</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Sum of Two in Array</h1>
+        <p>Given Array and Sum :
+          <b id="result" class="lead"></b>
+        </p>
+        <p>Result :
+          <b id="result2" class="lead"></b>
+        </p>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="userInput">Enter Array</label>
+            <input type="text" class="form-control" id="userInput" placeholder="Enter comma separated numbers...">
+          </div>
+          <div class="form-group">
+            <label for="userInput2">Enter Sum</label>
+            <input type="number" class="form-control" id="userInput2" placeholder="Enter number...">
+          </div>
+          <button id="checkPrimeBtn" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="src.js"></script>
+    <script>
+      $("#checkPrimeBtn").click(function(e){
+        e.preventDefault();
+        $("#result").empty();
+        $("#result2").empty()
+        var str1 = $("#userInput").val();
+        var str2 = $("#userInput2").val();
+        $("#result").text(str1 + " & " + str2);
+        $("#result2").text(sumFindInArr(str1.split(","),str2));
+      });
+    </script>
+  </body>
+</html>
