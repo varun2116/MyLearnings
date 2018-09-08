@@ -15,7 +15,6 @@ export class TodoformCont extends Component {
 export const mapDispatchToProps = dispatch => {
     return {
         handleTodo: payload => {
-            console.log(payload);
             dispatch(addTodo(payload));
         }
     }

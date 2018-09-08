@@ -11,9 +11,14 @@ export default function reducer(state = [], action){
                             }]
 
       case types.TOGGLE_TODO:
-          return state.map( todo => {
-            todo.id === action.id ? { ...todo, completed : !todo.compeleted } : todo
-          });
+          return state.map( (todo) =>
+            //todo.id === action.id ? todo : todo //{ ...todo, completed : !todo.completed } : todo
+            (todo.id === action.id) ? {id:todo.id, text:todo.text, completed: !todo.completed} : todo
+            /*if(todo.id === action.id){
+                return {id:todo.id, text:todo.text, completed: !todo.completed};
+            }*/
+            //return todo;
+          );
       default:
           return state;
     }
