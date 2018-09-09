@@ -1,13 +1,18 @@
 # JavaScript
 
 * Beginner
-    * [Grammar and Types](01_Grammar_Types)
+    * [Grammar and Types](Beginner/01_Grammar_Types)
         * Basic Syntax
         * Declarations
         * Variable Scope
         * Variable Hoisting
         * Data structures and types
         * Literals
+    * [Control flow and error handling](Beginner/02_Control_flow)
+        * Block Statement
+        * Conditional Statements (if...else and switch)
+        * try...catch
+        * Promises
 
 * Intermediate
     * [Data Structures](DataStructures)
