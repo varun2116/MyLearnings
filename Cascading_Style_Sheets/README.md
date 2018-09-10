@@ -30,3 +30,15 @@ CSS (Cascading Style Sheets) is used to style and lay out web pages — for exam
         * Percentages
         * Colors
         * Functions
+
+    * [Cascade and inheritance](05_Cascade_Inheritance)
+        * !important
+        * Specificity
+        * Source Order
+        * `inherit`,`initial`,`unset`and `revert`
+
+    * [The box model](06_Box_Model)
+        * Box properties; `width` and `height`, `padding`, `border`, `margin`
+        * Overflow
+        * Background clip
+        * `display` : `block`, `inline`, and `inline-block`

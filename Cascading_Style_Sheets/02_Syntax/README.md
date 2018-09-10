@@ -86,7 +86,7 @@ We are missing one part of the puzzle — we need to discuss how to tell our dec
 
 Selectors can get very complicated — you can make a rule match multiple elements by including multiple selectors separated by commas (a group,) and selectors can be chained together, for example *I want to select any element with a class of "blah", but only if it is inside an <article> element, and only while it is being hovered by the mouse pointer*. Don't worry — things will become clearer as you become more experienced with CSS.
 
-An element may be matched by several selectors, therefore several rules may set a given property multiple times. CSS defines which one has precedence over the others and must be applied: this is called the **cascade algorithm**, and you'll learn more about how it works in [Cascade and inheritance](10_Cascade_Inheritance).
+An element may be matched by several selectors, therefore several rules may set a given property multiple times. CSS defines which one has precedence over the others and must be applied: this is called the **cascade algorithm**, and you'll learn more about how it works in [Cascade and inheritance](05_Cascade_Inheritance).
 
 > **Important :** If a single basic selector in a chain or group is invalid, like when using an unknown pseudo-element or pseudo-class, the *group of selectors* is still valid, except for the invalid selector which will be ignored.
 
