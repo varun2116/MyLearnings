@@ -16,3 +16,17 @@ CSS (Cascading Style Sheets) is used to style and lay out web pages — for exam
         * CSS selectors and rules
         * CSS statements
         * Shorthand
+
+    * [Selectors](03_Selectors)
+        * [Simple selectors](03_Selectors/01_Simple_Selectors)
+        * [Attribute selectors](03_Selectors/02_Attribute_Selectors)
+        * [Pseudo-classes](03_Selectors/03_Pseudo_Classes_Elements)
+        * [Pseudo-elements](03_Selectors/03_Pseudo_Classes_Elements)
+        * [Combinators](03_Selectors/04_Combinators_Multi_Selectors)
+        * [Multiple selectors](03_Selectors/04_Combinators_Multi_Selectors)
+
+    * [CSS values and units](04_Values_Units)
+        * Numeric values
+        * Percentages
+        * Colors
+        * Functions
