@@ -11,15 +11,15 @@ Every element within a document is structured as a rectangular box inside the do
 ![](img/box-model-standard-small.png)
 
 * `width` and `height`
-<br / > The width and height properties set the width and height of the **content box**, which is the area in which the content of the box is displayed — this content includes both text content set inside the box, and other boxes representing nested child elements.
+<br /> The width and height properties set the width and height of the **content box**, which is the area in which the content of the box is displayed — this content includes both text content set inside the box, and other boxes representing nested child elements.
 
 > **Note :** Other properties exist that allow more subtle ways of handling content box size — setting size constraints rather than an absolute size. This can be done with the properties `min-width`, `max-width`, `min-height`, and `max-height`.
 
 * `padding`
-<br / > **Padding** refers to the *inner margin* of a CSS box — between the outer edge of the content box and the inner edge of the border. The size of this layer can be set on all four sides at once with the `padding` shorthand property, or one side at a time with the `padding-top`, `padding-right`, `padding-bottom` and `padding-left` properties.
+<br /> **Padding** refers to the *inner margin* of a CSS box — between the outer edge of the content box and the inner edge of the border. The size of this layer can be set on all four sides at once with the `padding` shorthand property, or one side at a time with the `padding-top`, `padding-right`, `padding-bottom` and `padding-left` properties.
 
 * `border`
-<br / > The **border** of a CSS box sits between the outer edge of the padding and the inner edge of the margin. By default the border has a size of 0 — making it invisible — but you can set the thickness, style and color of the border to make it appear. The `border` shorthand property allows you to set all of these on all four sides at once, for example `border: 1px solid black`. This can be broken down into numerous different longhand properties for more specific styling needs:
+<br /> The **border** of a CSS box sits between the outer edge of the padding and the inner edge of the margin. By default the border has a size of 0 — making it invisible — but you can set the thickness, style and color of the border to make it appear. The `border` shorthand property allows you to set all of these on all four sides at once, for example `border: 1px solid black`. This can be broken down into numerous different longhand properties for more specific styling needs:
     * `border-top`, `border-right`, `border-bottom`, `border-left`: Set the thickness, style and color of one side of the border.
     * `border-width`, `border-style`, `border-color`: Set only the thickness, style, or color individually, but for all four sides of the border.
     * You can also set one of the three properties of a single side of the border individually, using `border-top-width`, `border-top-style`, `border-top-color`, etc.
