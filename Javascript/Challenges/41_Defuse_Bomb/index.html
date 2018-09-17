@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+
+    <title>AMCAT Defuse Bomb</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">AMCAT Defuse Bomb</h1>
+        <p>Given array and key:
+          <b id="result" class="lead"></b>
+        </p>
+        <p>Result :
+          <b id="result2" class="lead"></b>
+        </p>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="userInput">Enter an array</label>
+            <input type="text" class="form-control" id="userInput" placeholder="Enter array...">
+          </div>
+          <div class="form-group">
+            <label for="userInput">Enter a key</label>
+            <input type="text" class="form-control" id="userInput1" placeholder="Enter a key...">
+          </div>
+          <button id="checkPrimeBtn" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="src.js"></script>
+    <script>
+      $("#checkPrimeBtn").click(function(e){
+        e.preventDefault();
+        var str1 = $("#userInput").val();
+        var key = parseInt($("#userInput1").val());
+        $("#result").text(str1+ " & "+ key);
+        var arr = $.map(str1.split(','), function(value){
+            return parseInt(value, 10);
+            // or return +value; which handles float values as well
+        });
+        $("#result2").text(AmcatDefuse(arr, key).toString());
+      });
+    </script>
+  </body>
+</html>
