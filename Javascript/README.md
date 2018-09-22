@@ -14,6 +14,8 @@
         * try...catch
         * Promises
 
+    * [Loops and iteration](Beginner/03_Loops_iteration)
+
 * Intermediate
     * [Data Structures](DataStructures)
     * [Algorithms](Algorithms)
