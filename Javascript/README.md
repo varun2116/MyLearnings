@@ -15,6 +15,24 @@
         * Promises
 
     * [Loops and iteration](Beginner/03_Loops_iteration)
+        * for
+        * while
+        * do...while
+        * break/continue
+        * for..in
+        * for..of
+    * [Functions](Beginner/04_Functions)
+        * Defining functions
+        * Calling functions
+        * Function scope
+        * Closures
+        * Arguments & parameters
+        * Arrow functions
+    * [Keyed collections](Beginner/09_Keyed_collections)
+        * Map
+        * WeakMap
+        * Set
+        * WeakSet
 
 * Intermediate
     * [Data Structures](DataStructures)
