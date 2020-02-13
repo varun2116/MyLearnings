@@ -209,4 +209,80 @@ We will instead place all of the elements for our site on the grid, using the gr
 
 <hr />
 
-## Positioning with grid-template-areas
+## Positioning with ```grid-template-areas```
+
+An alternative way to place items on your grid is to use the ```grid-template-areas``` property and giving the various elements of your design a name.
+
+Add the following CSS (refer [file](grid2.html)):
+```
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+            "footer footer";
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 20px;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    article {
+        grid-area: content;
+    }
+
+    aside {
+        grid-area: sidebar;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+```
+Reload the page and you will see that your items have been placed just as before (from the previous example) without us needing to use any line numbers!
+
+![](img/grid9.png)
+
+The rules for ```grid-template-areas``` are as follows:
+
+* You need to have every cell of the grid filled.
+* To span across two cells, repeat the name.
+* To leave a cell empty, use a ```.``` (period).
+* Areas must be rectangular — you can’t have an L-shaped area for example.
+* Areas can't be repeated in different locations.
+
+<hr />
+
+## A CSS Grid, grid framework
+
+Grid "frameworks" tend to be based around 12 or 16 column grids and with CSS Grid, you don’t need any third party tool to give you such a framework — it's already there in the spec.
+
+Refer the [file](grid3.html). This contains a container with a 12 column grid defined, and the same markup as we used in the previous two examples. We can now use line-based placement to place our content on the 12 column grid.
+```
+    header {
+        grid-column: 1 / 13;
+        grid-row: 1;
+    }
+
+    article {
+        grid-column: 4 / 13;
+        grid-row: 2;
+    }
+
+    aside {
+        grid-column: 1 / 4;
+        grid-row: 2;
+    }
+
+    footer {
+        grid-column: 1 / 13;
+        grid-row: 3;
+    }
+```
+![](img/grid10.png)
+
+If you use the Firefox Grid Inspector to overlay the grid lines on your design, you can see how our 12 column grid works.
+
+![](img/grid11.png)
