@@ -288,6 +288,7 @@ You can set negative order values to make items appear earlier than items with 0
 
 It is possible to create some pretty complex layouts with flexbox. It is perfectly ok to set a flex item to also be a flex container, so that its children are also laid out like flexible boxes. Have a look at [complex-flexbox.html](complex-flexbox.html).
 ![](img/complex-flexbox.png)
+
 The HTML for this is fairly simple. We've got a ```<section>``` element containing three ```<article>```s. The third ```<article>``` contains three ```<div>```s. :
  ```
      section - article
