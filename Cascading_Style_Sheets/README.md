@@ -55,3 +55,5 @@ CSS (Cascading Style Sheets) is used to style and lay out web pages — for exam
 * [Grids](07_CSS_Layout/03_Grids)
 * [Floats](07_CSS_Layout/04_Floats)
 * [Positioning](07_CSS_Layout/05_Positioning)
+* [Multiple-column layout]()
+* [Responsive design](07_CSS_Layout/07_Responsive_design)
